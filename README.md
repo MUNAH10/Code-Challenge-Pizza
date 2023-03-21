@@ -1,24 +1,43 @@
-# README
+### Description
+This is an API for tracking pizza restaurants. It allows users to add and view information about restaurants and their pizzas.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Installation and setup
+To use this repo on your local machine requires some simple steps
 
-Things you may want to cover:
+* Open a terminal / command line interface on your computer
 
-* Ruby version
+* Clone the repo by using the following:
 
-* System dependencies
+  git clone "https://github.com/MUNAH10/phase-4-Code-Challenge-1"
 
-* Configuration
+#### Running the Application
+* Run "bundle install" to install dependencies
 
-* Database creation
+* Run "rails db:migrate" to create the database tables
 
-* Database initialization
+* Run rails db:seed to add seed data to the database
 
-* How to run the test suite
+* Start the server with "rails s"
 
-* Services (job queues, cache servers, search engines, etc.)
+ #### Models
+You need to create the following relationships:
 
-* Deployment instructions
+- A `Restaurant` has many `Pizza`s through `RestaurantPizza`
+- A `Pizza` has many `Restaurant`s through `RestaurantPizza`
+- A `RestaurantPizza` belongs to a `Restaurant` and belongs to a `Pizza`
 
-* ...
+#### Validations
+Add validations to the `RestaurantPizza` model:
+
+- must have a `price` between 1 and 30
+
+
+### Author
+Muna Hassan
+This project was contributed by:
+
+   [Muna Hassan]
+
+### Lincense
+Copyright c
+Copyright (c)
