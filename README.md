@@ -1,43 +1,38 @@
-### Description
+Description
 This is an API for tracking pizza restaurants. It allows users to add and view information about restaurants and their pizzas.
 
-### Installation and setup
+Installation and setup
 To use this repo on your local machine requires some simple steps
 
-* Open a terminal / command line interface on your computer
+Open a terminal / command line interface on your computer
 
-* Clone the repo by using the following:
+Clone the repo by using the following:
 
-  git clone "https://github.com/MUNAH10/phase-4-Code-Challenge-1"
+git clone "https://github.com/MUNAH10/phase-4-Code-Challenge-1"
 
-#### Running the Application
-* Run "bundle install" to install dependencies
+Running the Application
+Run "bundle install" to install dependencies
 
-* Run "rails db:migrate" to create the database tables
+Run "rails db:migrate" to create the database tables
 
-* Run rails db:seed to add seed data to the database
+Run rails db:seed to add seed data to the database
 
-* Start the server with "rails s"
+Start the server with "rails s"
 
- #### Models
+Models
 You need to create the following relationships:
 
-- A `Restaurant` has many `Pizza`s through `RestaurantPizza`
-- A `Pizza` has many `Restaurant`s through `RestaurantPizza`
-- A `RestaurantPizza` belongs to a `Restaurant` and belongs to a `Pizza`
+A Restaurant has many Pizzas through RestaurantPizza
+A Pizza has many Restaurants through RestaurantPizza
+A RestaurantPizza belongs to a Restaurant and belongs to a Pizza
+Validations
+Add validations to the RestaurantPizza model:
 
-#### Validations
-Add validations to the `RestaurantPizza` model:
+must have a price between 1 and 30
+Author
+Muna Hassan This project was contributed by:
 
-- must have a `price` between 1 and 30
+[Muna Hassan]
 
-
-### Author
-Muna Hassan
-This project was contributed by:
-
-   [Muna Hassan]
-
-### Lincense
-Copyright c
-Copyright (c)
+Lincense
+Copyright c Copyright (c)
